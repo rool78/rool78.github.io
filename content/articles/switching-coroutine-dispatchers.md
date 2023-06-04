@@ -16,6 +16,8 @@ aliases = ["switching-coroutine-dispatchers"]
 +++
 
 #### Switching Coroutine Dispatchers in Android: The good way
+`Published Jun 04, 2023`
+ 
 
 In this article, we are going to discuss who should be responsible for switching *Coroutine Dispatchers*.
 
