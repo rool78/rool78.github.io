@@ -17,16 +17,16 @@ aliases = ["switching-coroutine-dispatchers"]
 
 #### Switching Coroutine Dispatchers in Android: The good way
 
-In this article we are going to discuss who should be responsible for switching *Coroutine Dispatchers*.
+In this article, we are going to discuss who should be responsible for switching *Coroutine Dispatchers*.
 
-Remember that *CoroutineDispatcher* is part of the [coroutines library](https://github.com/Kotlin/kotlinx.coroutines), it brings the capability of confine coroutine
-execution to a specific thread, dispatch it to a thread pool, or let it run unconfined.
+Remember that *CoroutineDispatcher* is part of the [coroutines library](https://github.com/Kotlin/kotlinx.coroutines), 
+it brings the capability of confining Coroutine execution to a specific thread, dispatching it to a thread pool, or letting it run unconfined.
 
 Coroutines library is already providing some build-in coroutine dispatchers, let's see the usage of the most common ones:
 
-- **Default:** CPU-intensive operations
-- **IO:** I/O Operations (read / write files, network calls...)
-- **Main:** Specific Android dispatcher for interacting with the UI
+- **Default:** CPU-intensive operations.
+- **IO:** I/O Operations (read/write files, network calls...)
+- **Main:** Specific Android dispatcher for interacting with the UI.
 
 ---
 
@@ -69,9 +69,9 @@ class ExampleViewModel(
 }
 ````
 
-Following this approach everything will work as expected, but we are delegating the responsibility of changing
-the CoroutineDispatcher to the ViewModel, in this case I knew that the use case is doing some expensive CPU work because
-I developed it, but it might not be the case, so it's a better option to expose a suspend function in our use case
+Following this approach, everything will work as expected, but we are delegating the responsibility of changing
+the CoroutineDispatcher to the ViewModel, in this case, we knew that the use case is doing some expensive CPU work because
+we developed it, but it might not be the case, so it's a better option to expose a suspend function in our use case
 and decide there which dispatcher to use:
 
 ````kotlin
@@ -84,7 +84,7 @@ class ExpensiveOperationsOverListUseCase(
 }
 ````
 
-*Notice that we are injecting the CoroutineDispatcher within the constructor, it's also a good practice that make things
+*Notice that we are injecting the CoroutineDispatcher within the constructor, it's also a good practice that makes things
 easier for testing but that will be covered on another article.*
 
 ````kotlin
