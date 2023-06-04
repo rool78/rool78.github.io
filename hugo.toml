@@ -10,17 +10,26 @@ copyright = "&copy; Copyright 2023, Raul Maza"
 
 # Main menu items
 [menu]
+
 [[menu.main]]
 identifier = "about"
 name = "About"
 title = "About"
-url = "https://rool78.github.io/"
+url = "/about/"
 weight = -110
+
 [[menu.main]]
 identifier = "blog"
 name = "Blog"
 title = "Blog"
 url = "/blog/"
+weight = -100
+
+[[menu.main]]
+identifier = "samples"
+name = "Code Samples"
+title = "Code Samples"
+url = "/samples/"
 weight = -100
 
 # Configuration Features
@@ -45,6 +54,6 @@ href = "https://www.linkedin.com/in/raul-maza/"
 #[[params.social]]
 #fa_icon = "fab fa-twitter fa-1x"
 #href = ""
-[[params.social]]
-fa_icon = "fas fa-at fa-1x"
-href = ""
+#[[params.social]]
+#fa_icon = "fas fa-at fa-1x"
+#href = "raul.mazaa@gmail.com"
