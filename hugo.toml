@@ -14,7 +14,7 @@ copyright = "&copy; Copyright 2023, Raul Maza"
 identifier = "about"
 name = "About"
 title = "About"
-url = "/about/"
+url = "https://rool78.github.io/"
 weight = -110
 [[menu.main]]
 identifier = "blog"
