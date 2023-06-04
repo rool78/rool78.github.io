@@ -1,0 +1,50 @@
+baseURL = "https://example.com"
+title = "Raul Maza"
+languageCode = "en-us"
+theme = "devise"
+relativeURLs = true
+enableEmoji = true
+googleAnalytics = ""
+enableRobotsTXT = true
+copyright = "&copy; Copyright 2023, Raul Maza"
+
+# Main menu items
+[menu]
+[[menu.main]]
+identifier = "about"
+name = "About"
+title = "About"
+url = "/about/"
+weight = -110
+[[menu.main]]
+identifier = "blog"
+name = "Blog"
+title = "Blog"
+url = "/blog/"
+weight = -100
+
+# Configuration Features
+[params]
+description = "Raul Maza Android Software Engineer personal site"      # Your meta description of the site
+header_title = "Raul Maza"                 # Your header title
+header_subtitle = "Android Software Engineer" # Your header subtitle
+home_image = "/images/avatar.jpg"          # Path to header image starting from the static directory (optional)
+recent_posts = 5                           # Max amount of recent posts to show
+mainSections = ["posts", "post", "blog"]   # Main sections to include in recent posts
+[params.style]                             # CSS style overrides
+backgroundColor = "#f8f9fa"
+homeImageBorderColor = "#ffffff"
+fontFamilyBase = "Helvetica Neue"        # First-choice font
+fontColor = "#212529"
+[[params.social]]
+fa_icon = "fab fa-github fa-1x"          # Font Awesome icon class
+href = "http://github.com/rool78"      # Link to associate with icon (http://, https://, mailto:)
+[[params.social]]
+fa_icon = "fab fa-linkedin-in fa-1x"
+href = "https://www.linkedin.com/in/raul-maza/"
+#[[params.social]]
+#fa_icon = "fab fa-twitter fa-1x"
+#href = ""
+[[params.social]]
+fa_icon = "fas fa-at fa-1x"
+href = ""
