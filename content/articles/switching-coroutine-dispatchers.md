@@ -1,6 +1,6 @@
 +++
 author = "Raul Maza"
-title = "Switching Coroutine Dispatchers in Android. The good way."
+title = "Switching Coroutine Dispatchers in Android: The good way."
 date = "2023-06-04"
 description = "Sample article showcasing basic Markdown syntax and formatting for HTML elements."
 tags = [
