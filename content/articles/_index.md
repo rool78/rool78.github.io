@@ -1,7 +1,7 @@
 +++
 aliases = ["posts","articles","blog","showcase","docs"]
 title = "Articles"
-author = "Raul Maza"
+author = "Raúl Maza"
 tags = ["articles"]
 +++
 

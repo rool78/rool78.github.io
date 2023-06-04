@@ -1,12 +1,12 @@
 baseURL = "https://example.com"
-title = "Raul Maza"
+title = "Raúl Maza"
 languageCode = "en-us"
 theme = "devise"
 relativeURLs = true
 enableEmoji = true
 googleAnalytics = ""
 enableRobotsTXT = true
-copyright = "&copy; Copyright 2023, Raul Maza"
+copyright = "&copy; Copyright 2023, Raúl Maza"
 
 # Main menu items
 [menu]
@@ -34,8 +34,8 @@ weight = -100
 
 # Configuration Features
 [params]
-description = "Raul Maza Android Software Engineer personal site"      # Your meta description of the site
-header_title = "Raul Maza"                 # Your header title
+description = "Raúl Maza Android Software Engineer personal site"      # Your meta description of the site
+header_title = "Raúl Maza"                 # Your header title
 header_subtitle = "Android Software Engineer" # Your header subtitle
 home_image = "/images/avatar.jpg"          # Path to header image starting from the static directory (optional)
 recent_posts = 5                           # Max amount of recent posts to show
