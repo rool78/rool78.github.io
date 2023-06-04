@@ -19,10 +19,10 @@ url = "/about/"
 weight = -110
 
 [[menu.main]]
-identifier = "blog"
-name = "Blog"
-title = "Blog"
-url = "/blog/"
+identifier = "articles"
+name = "Articles"
+title = "Articles"
+url = "/articles/"
 weight = -100
 
 [[menu.main]]
@@ -39,7 +39,7 @@ header_title = "Raul Maza"                 # Your header title
 header_subtitle = "Android Software Engineer" # Your header subtitle
 home_image = "/images/avatar.jpg"          # Path to header image starting from the static directory (optional)
 recent_posts = 5                           # Max amount of recent posts to show
-mainSections = ["posts", "post", "blog"]   # Main sections to include in recent posts
+mainSections = ["articles"]   # Main sections to include in recent posts
 [params.style]                             # CSS style overrides
 backgroundColor = "#f8f9fa"
 homeImageBorderColor = "#ffffff"
