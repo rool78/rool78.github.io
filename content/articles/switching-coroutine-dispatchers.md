@@ -62,7 +62,7 @@ class ExampleViewModel(
 
     private fun doSomething(list: List<String>) {
         viewModelScope.launch { // By default, build-in viewModelScope uses the main dispatcher
-            val result = withContext(defaultDispatcher) { // withContext allow us to change the coroutine context, in this case we use it to change the CoroutineDispatcher
+            val result = withContext(defaultDispatcher) { // withContext allow us to change the coroutine context, in this case we use it to change the CoroutineDispatcher to the default
                 expensiveUseCase(list)
             }
             // Update UI with result (We are on the main dispatcher again, so it will be safe to interact with the UI)
