@@ -41,7 +41,7 @@ follow this principle: [A Coroutine should be safe to call from the main thread]
 
 Let's see an example **NOT** following the principle:
 
-Imagine we have a use case that has to do some expensive operations over a list:
+Imagine we have an use case that has to do some expensive operations over a list:
 
 ````kotlin
 class ExpensiveOperationsOverListUseCase {
