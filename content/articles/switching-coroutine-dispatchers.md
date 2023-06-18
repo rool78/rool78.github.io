@@ -24,7 +24,7 @@ In this article, we are going to discuss who should be responsible for switching
 Remember that *CoroutineDispatcher* is part of the [coroutines library](https://github.com/Kotlin/kotlinx.coroutines), 
 it brings the capability of confining Coroutine execution to a specific thread, dispatching it to a thread pool, or letting it run unconfined.
 
-Coroutines library is already providing some build-in coroutine dispatchers, let's see the usage of the most common ones:
+Coroutines library is already providing some built-in coroutine dispatchers, let's see the usage of the most common ones:
 
 - **Default:** CPU-intensive operations.
 - **IO:** I/O Operations (read/write files, network calls...)
@@ -61,7 +61,7 @@ class ExampleViewModel(
 ) : ViewModel() {
 
     private fun doSomething(list: List<String>) {
-        viewModelScope.launch { // By default, build-in viewModelScope uses the main dispatcher
+        viewModelScope.launch { // By default, built-in viewModelScope uses the main dispatcher
             val result = withContext(defaultDispatcher) { // withContext allow us to change the coroutine context, in this case we use it to change the CoroutineDispatcher to the default
                 expensiveUseCase(list)
             }
