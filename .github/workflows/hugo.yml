@@ -50,9 +50,11 @@ jobs:
           hugo --gc --minify --baseURL "/"
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v4
         with:
+          name: github-pages
           path: ./public
+          retention-days: 1
 
   deploy:
     runs-on: ubuntu-latest
